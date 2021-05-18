@@ -18,9 +18,9 @@
   <div class="app">
 
     <!-- Video en background-->
-    <div>
+    <div class="vid-container">
       <video loop>
-        <source src="..." type="video/mp4">
+        <source src="./assets/media/video.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -29,24 +29,25 @@
 
       <!-- Botones superiores de seleccionar tiempo -->
       <div class="time-select">
-        <button>2 minutos</button>
-        <button>5 minutos</button>
-        <button>10 minutos</button>
+        <button value="5">5 segundos</button>
+        <button value="300">5 minutos</button>
+        <button value="600">10 minutos</button>
       </div>
 
       <!-- Temporizador con play/pause -->
       <div class="player-container">
 
         <!-- Play/pause -->
-        <img class="play" src="...">
-
+        <div class="play-container">
+          <img style="width: 100px" class="play" src="./assets/icons/play.svg">
+        </div>
         <!-- Circulo feedback temporizador -->
-        <svg..></svg..>
+       <!--  <svg..></svg..> -->
 
         <!-- Time display -->
-        <div class="time-display">
-
-        </div>
+        <h1 class="time-display">
+          10:00
+        </h1>
 
       </div>
 
@@ -70,6 +71,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <script src="./js/main.js"
 </body>
 
 </html>
